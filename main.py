@@ -12,7 +12,6 @@ def centerX(str, adjust=0):
         finalString = ""
         for line in str.splitlines():
             finalString = finalString + spaceToAdd + line + "\n"
-            print(consoleColums, currentLongerLine)
 
         return finalString
     else:
@@ -57,3 +56,4 @@ def alignRight(str, ladjust=0):
 
     else:
         return str
+        
