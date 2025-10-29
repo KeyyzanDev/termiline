@@ -4,7 +4,7 @@ This module offers functions for aligning text in the terminal, making it easier
 
 ![Example with the result of centerX and centerY.](https://i.imgur.com/3WyP906_d.webp?maxwidth=1520&fidelity=grand)
 
-### Install
+### Install *note: The package is currently unavailable via pip.*
 
 - **Windows:** ```pip install termiline```
 - **MacOS/Linux/Unix:** ```pip(3, or python version you are using) install termiline```
