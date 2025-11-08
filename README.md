@@ -4,11 +4,6 @@ This module offers functions for aligning text in the terminal, making it easier
 
 ![Example with the result of centerX and centerY.](https://i.imgur.com/3WyP906_d.webp?maxwidth=1520&fidelity=grand)
 
-### Install *note: The package is currently unavailable via pip.*
-
-- **Windows:** ```pip install termiline```
-- **MacOS/Linux/Unix:** ```pip(3, or python version you are using) install termiline```
-
 ## Functions
 
 ### `centerX(str, adjust=0)`
@@ -18,11 +13,12 @@ Centers text horizontally within the terminal.
 - **Parameters:**
   - `str` (str): The text to center.
   - `adjust` (int, optional): Additional spaces for centering adjustment (default is `0`).
+  - `addLineBreak` (boolean, optional): To add a line break or not (default is `true`).
 
 - **Returns:** 
   - Centered text as a string.
 
-### `centerY(str, uadjust=0, dadjust=0)`
+### `centerY(str, uadjust=0, dadjust=0, addLineBreak)`
 
 Centers text vertically in the terminal.
 
