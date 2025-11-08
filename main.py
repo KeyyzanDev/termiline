@@ -1,8 +1,12 @@
 import os
 
-def centerX(str, adjust=0):
+def centerX(str, adjust=0, addLineBreak=True):
     consoleColums = os.get_terminal_size().columns
     currentLongerLine = 0
+    lineBreak = ""
+
+    if addLineBreak: lineBreak = "\n"
+
     for line in str.splitlines():
         if len(line) > currentLongerLine:
             currentLongerLine = len(line)
@@ -11,7 +15,7 @@ def centerX(str, adjust=0):
         spaceToAdd = " "*int(((consoleColums-currentLongerLine)/2)+adjust)
         finalString = ""
         for line in str.splitlines():
-            finalString = finalString + spaceToAdd + line + "\n"
+            finalString = finalString + spaceToAdd + line + lineBreak
 
         return finalString
     else:
@@ -56,4 +60,3 @@ def alignRight(str, ladjust=0):
 
     else:
         return str
-        
